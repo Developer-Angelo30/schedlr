@@ -1,0 +1,133 @@
+
+$background:#f2f2f2;
+$yellow: #FED93B;
+$orange: #FCB053;
+$blue: #5176E4;
+
+#wrapper-login-verification{
+    background: rgba(0,0,0,0.7);
+    z-index: 99;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    
+
+    .center-box{
+        background-color: white;
+        position: relative;
+        width: 50vw;
+        padding: 50px;
+        border-radius: 20px;
+
+        form{
+            .group-input{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+                column-gap: 10px;
+                
+                input{
+                    width: 100%;
+                    height: 80px;
+                    text-align: center;
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+}
+
+#wrapper-login{
+    min-height: 100vh;
+    background-image: url("../../assets/images/bg-photo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .center-login{
+        width: 60vw;
+        height: 60vh;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 20px;
+
+        .left{
+            position: relative;
+            background-color: white;
+            border-radius: 20px 0px 0px 20px;
+
+            @mixin left-configure{
+                position: absolute;
+                width: 100%;
+                bottom: 0px;
+                border-radius: 20px 0 130px 20px;
+            }
+
+            .yellow{
+                @include left-configure();
+                background-color: $yellow;
+                height: 100%;
+            }
+            .orange{
+                @include left-configure();
+                background-color: $orange;
+                height: 95%;
+            }
+            .blue{
+                @include left-configure();
+                background-color: $blue;
+                height: 85%;
+            }
+        }
+
+        .right{
+            border-radius: 0 20px 20px 0;
+            position: relative;
+            background-color: white;
+
+            @mixin right-configure{
+                position: absolute;
+                width: 100%;
+                bottom: 0px;
+                border-radius: 0px 20px 20px 0px;
+            }
+
+            .yellow{
+                @include right-configure();
+                background-color: $yellow;
+                height: 100%;
+            }
+            .orange{
+                @include right-configure();
+                background-color: $orange;
+                height: 95%;
+            }
+            .white{
+                @include right-configure();
+                background-color: white;
+                height: 100%;
+                border-radius: 100px 20px 20px 0px;
+                padding: 20px;
+
+            }
+        }
+
+    }
+
+}
+
+#dashboard{
+
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    min-height: 100vh;
+    background-color: greenyellow;
+
+    #sidebar{
+        background-color: $blue;
+    }
+    #content{
+        background-color: $background;
+    }
+}

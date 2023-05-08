@@ -1,0 +1,116 @@
+#wrapper-login-verification {
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 99;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+#wrapper-login-verification .center-box {
+  background-color: white;
+  position: relative;
+  width: 50vw;
+  padding: 50px;
+  border-radius: 20px;
+}
+#wrapper-login-verification .center-box form .group-input {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+#wrapper-login-verification .center-box form .group-input input {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  font-size: 50px;
+}
+
+#wrapper-login {
+  min-height: 100vh;
+  background-image: url("../../assets/images/bg-photo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#wrapper-login .center-login {
+  width: 60vw;
+  height: 60vh;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 20px;
+}
+#wrapper-login .center-login .left {
+  position: relative;
+  background-color: white;
+  border-radius: 20px 0px 0px 20px;
+}
+#wrapper-login .center-login .left .yellow {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  border-radius: 20px 0 130px 20px;
+  background-color: #FED93B;
+  height: 100%;
+}
+#wrapper-login .center-login .left .orange {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  border-radius: 20px 0 130px 20px;
+  background-color: #FCB053;
+  height: 95%;
+}
+#wrapper-login .center-login .left .blue {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  border-radius: 20px 0 130px 20px;
+  background-color: #5176E4;
+  height: 85%;
+}
+#wrapper-login .center-login .right {
+  border-radius: 0 20px 20px 0;
+  position: relative;
+  background-color: white;
+}
+#wrapper-login .center-login .right .yellow {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  border-radius: 0px 20px 20px 0px;
+  background-color: #FED93B;
+  height: 100%;
+}
+#wrapper-login .center-login .right .orange {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  border-radius: 0px 20px 20px 0px;
+  background-color: #FCB053;
+  height: 95%;
+}
+#wrapper-login .center-login .right .white {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  border-radius: 0px 20px 20px 0px;
+  background-color: white;
+  height: 100%;
+  border-radius: 100px 20px 20px 0px;
+  padding: 20px;
+}
+
+#dashboard {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  min-height: 100vh;
+  background-color: greenyellow;
+}
+#dashboard #sidebar {
+  background-color: #5176E4;
+}
+#dashboard #content {
+  background-color: #f2f2f2;
+}/*# sourceMappingURL=all.css.map */
